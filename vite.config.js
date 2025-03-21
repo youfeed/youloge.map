@@ -8,4 +8,7 @@ export default defineConfig({
       fileName: "youloge.map",
     },
   },
+  optimizeDeps: {
+    exclude: ["fsevents"], // 确保 fsevents 不被 Vite 尝试优化/预构建
+  },
 });
