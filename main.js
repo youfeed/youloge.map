@@ -1,4 +1,5 @@
 import MAP from "./lib/main.js";
+import IMG from "./lib/image.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -11,9 +12,10 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-let map = MAP({
+let map = IMG({
   selector: "#map",
-  apikey:''
+  apikey:'',
+  type:'tiandi',
 });
 map.onready = () => {
   console.log('onready:map');

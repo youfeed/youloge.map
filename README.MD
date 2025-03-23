@@ -17,5 +17,11 @@
 const map = map();
 map.onready();
 
-map.setCenter([116.397477, 39.908692]);
+
 ```
+
+### API设计
+
+- map.center({lat:0,lng:0} ); // 无参：返回中心的 有参：设置中心点
+- map.zoom(12); // 无参：返回当前的缩放级别 有参：设置缩放级别
+
